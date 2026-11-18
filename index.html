@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total and Average Marks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Student Marks Calculator</h1>
+        <p>Enter marks for three subjects to calculate the total and average.</p>
+
+        <form id="marks-form">
+            <label for="subject1">Subject 1 Marks</label>
+            <input type="number" id="subject1" min="0" max="100"
+                   step="any" placeholder="Enter marks" required>
+
+            <label for="subject2">Subject 2 Marks</label>
+            <input type="number" id="subject2" min="0" max="100"
+                   step="any" placeholder="Enter marks" required>
+
+            <label for="subject3">Subject 3 Marks</label>
+            <input type="number" id="subject3" min="0" max="100"
+                   step="any" placeholder="Enter marks" required>
+
+            <button type="submit" id="calculate-button">Calculate</button>
+        </form>
+
+        <section class="results" aria-live="polite">
+            <p id="total-result">Total: --</p>
+            <p id="average-result">Average: --</p>
+            <p id="error-message" role="alert"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
